@@ -8,7 +8,7 @@ export const Header = () => {
     };
     return (
         <div id="nav">
- 			<Link to='/oxafrica' id="logo"></Link>
+ 			<Link to='/' id="logo"></Link>
  			<div id="mini" onClick={toggleMenu}>
                 {/* <!-- onClick="getElementById('nav_grid').style.display = 'block'"--> */}
 					<span>
@@ -18,7 +18,7 @@ export const Header = () => {
  			<div id="nav_grid" className={isMenuOpen ? 'open' : ''}>
  				<div>
  					<ul>
- 					<li className="big_nav_link"><Link to='/oxafrica'>Home</Link></li> 
+ 					<li className="big_nav_link"><Link to='/'>Home</Link></li> 
  					<li className="big_nav_link">Products
 						<div className="dropdown">
 				            <span id ="prod"><Link to='/'>All Products</Link>
