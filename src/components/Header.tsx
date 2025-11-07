@@ -1,133 +1,136 @@
+import { Link } from 'react-router-dom'
+import { useState } from 'react'
 export const Header = () => {
-    // const menuDisplay = () => {
-        // document.getElementById("nav_grid").style.display == "none" ? document.getElementById("nav_grid").style.display = "block" : document.getElementById("nav_grid").style.display = "none";
-    // }
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
+    };
     return (
         <div id="nav">
- 			<div id="logo" onClick={() => window.location.href='/oxafrica'}></div>
- 			<div id="mini">
+ 			<Link to='/oxafrica' id="logo"></Link>
+ 			<div id="mini" onClick={toggleMenu}>
                 {/* <!-- onClick="getElementById('nav_grid').style.display = 'block'"--> */}
 					<span>
 					<svg xmlns="http://www.w3.org/2000/svg" height="35px" viewBox="0 0 24 24" width="35px" fill="0000"><path d="M0 0h24v24H0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
 					</span>
 			</div>
- 			<div id="nav_grid">
+ 			<div id="nav_grid" className={isMenuOpen ? 'open' : ''}>
  				<div>
  					<ul>
- 					<li className="big_nav_link" onClick={() => window.location.href='/oxafrica'}>Home</li> 
+ 					<li className="big_nav_link"><Link to='/oxafrica'>Home</Link></li> 
  					<li className="big_nav_link">Products
 						<div className="dropdown">
-				            <span id ="prod"><a  href=''>All Products</a>
+				            <span id ="prod"><Link to='/'>All Products</Link>
 				            	<div className="subproducts">
-								    <a href=''>All Products (A - Z)</a>
+								    <Link to='/'>All Products (A - Z)</Link>
 								    {/* <!--<a href=''><br/> </a>
 								    <a href=''><br/> </a>--> */}
-								    <a href=""> Accessories, Attachments & Implements</a>
-								    <a href="">Application Equipment</a>
-								    <a href="">Backhoes</a>
-								    <a href="">Cutters & Shredders</a>
-								    <a href="">Engines</a>
-								    <a href="">Utility Vehicles</a>
-								    <a href="">Hay & Forage</a>
-								    <a href="">Harvesting</a>
-								    <a href="">Home & Workshop Products</a>
-								    <a href="">Loaders</a>
-								    <a href="">Mowers</a>
-								    <a href="">Planting Equipment</a>
-								    <a href="">AGRO AI</a>
-								    <a href="">Scraper Systems</a>
-								    <a href="">Seeding Equipment</a>
-								    <a href="">Sprayers</a>
-								    <a href="">Tillage</a>
-								    <a href="">Tractors</a>
+								    <Link to="#"> Accessories, Attachments & Implements</Link>
+								    <Link to="#">Application Equipment</Link>
+								    <Link to="#">Backhoes</Link>
+								    <Link to="#">Cutters & Shredders</Link>
+								    <Link to="#">Engines</Link>
+								    <Link to="#">Utility Vehicles</Link>
+								    <Link to="#">Hay & Forage</Link>
+								    <Link to="#">Harvesting</Link>
+								    <Link to="#">Home & Workshop Products</Link>
+								    <Link to="#">Loaders</Link>
+								    <Link to="#">Mowers</Link>
+								    <Link to="#">Planting Equipment</Link>
+								    <Link to="#">AGRO AI</Link>
+								    <Link to="#">Scraper Systems</Link>
+								    <Link to="#">Seeding Equipment</Link>
+								    <Link to="#">Sprayers</Link>
+								    <Link to="#">Tillage</Link>
 								</div>
 							</span>
 				            <br/>
-				            <a href="">Lawns and Gardens</a>
+				            <Link to="#">Lawns and Gardens</Link>
 				            <br/>
-				            <a href="">Electronics</a><br/>
-				            <a href="">Construction</a><br/>
-				            <a href="">  Crop Care</a><br/>
-				            <a href="">Engines</a><br/>
-				            <a href="">Rental Sales</a><br/>
-				            <a href="">Attachments</a><br/> 
-				            <a href="">Used Equipment</a>
+				            <Link to="#">Electronics</Link><br/>
+				            <Link to="#">Construction</Link><br/>
+				            <Link to="#">  Crop Care</Link><br/>
+				            <Link to="#">Engines</Link><br/>
+				            <Link to="#">Rental Sales</Link><br/>
+				            <Link to="#">Attachments</Link><br/> 
+				            <Link to="#">Used Equipment</Link>
 				        </div>
  					</li>
         			<li className="big_nav_link">Finance
         				<div className="dropdown">
-					        <a href="#hjkl">OX Finance</a><br/>
-					        <a href="#ljk;">Special Discount Finance</a>
+					        <Link to="#">OX Finance</Link><br/>
+					        <Link to="#">Special Discount Finance</Link>
 				        </div>
     				</li>
     				<li className="big_nav_link">Parts and Services
     					 <div className="dropdown">
-					        <span><a href="">Parts</a>
+					        <span><Link to="#">Parts</Link>
 						        <div className="">
-						            <a href="">Maintenance parts</a>
-						            <a href="">Engines</a>
-						            <a href="">Construction</a>
-						            <a href="">Tractors</a>
-						            <a href="">Combine Harvestors</a>
-						            <a href="">Sprayers</a>
-						            <a href="">Tillage</a>
-						            <a href="">Discs</a>
+						            <Link to="#">Maintenance parts</Link>
+						            <Link to="#">Engines</Link>
+						            <Link to="#">Construction</Link>
+						            <Link to="#">Tractors</Link>
+						            <Link to="#">Combine Harvestors</Link>
+						            <Link to="#">Sprayers</Link>
+						            <Link to="#">Tillage</Link>
+						            <Link to="#">Discs</Link>
 						        </div>
 					    	</span>
 					            <br/>
 					        <span>
-					        	<a href="">Manuals</a>
+					        	<Link to="#">Manuals</Link>
 						        <div className="">
-						            <a href="">Operator's Manual for All Tractors</a>
-						            <a href="">Operator's Manual for Combine Harvestprs</a>
-						            <a href="">Other Manuals</a>
+						            <Link to="#">Operator's Manual for All Tractors</Link>
+						            <Link to="#">Operator's Manual for Combine Harvestprs</Link>
+						            <Link to="#">Other Manuals</Link>
 						        </div>
 					    	</span>
 					        <br/>
 					        <span>
-					        	<a href="">Training</a>
+					        	<Link to="#">Training</Link>
 						        <div className="">
-						            <a href="">Training and Safety Videos</a>
-						            <a href="">Reference Guides</a>
-						            <a href="">OX Customer Service</a>
+						            <Link to="#">Training and Safety Videos</Link>
+						            <Link to="#">Reference Guides</Link>
+						            <Link to="#">OX Customer Service</Link>
 						        </div>
 					        </span>
 					        <br/>
-					        <a href="">Warranty</a>
+					        <Link to="#">Warranty</Link>
 					        <br/>
 					        <span>
-					        	<a href="">Servicing</a>
+					        	<Link to="#">Servicing</Link>
 						        <div className="">
-						            <a href="">Self Repair</a>
-						            <a href="">Servicing Packages</a>
+						            <Link to="#">Self Repair</Link>
+						            <Link to="#">Servicing Packages</Link>
 						        </div>
 					        </span>
 					        <br/>
 					        <span>
-					        	<a href="">Safety</a>
+					        	<Link to="#">Safety</Link>
 						        <div className="">
-						            <a href="">Operator Insurance</a>
-						            <a href="">Protective Gears</a>
+						            <Link to="#">Operator Insurance</Link>
+						            <Link to="#">Protective Gears</Link>
 						        </div>
 						     </span>
 					        <br/>
 					        <span>
-					        	<a href="">Protection Plan</a>
+					        	<Link to="#">Protection Plan</Link>
 						        <div className="">
-						            <a href="">Damage Insurance</a>
+						            <Link to="#">Damage Insurance</Link>
 						        </div>
 						    </span>
 					        <br/>
-					         <a href="">ox Support</a>
+					         <Link to="#">ox Support</Link>
 					        </div>
     				</li>
     				<li className="big_nav_link">Tools and Resources
     					<div className="dropdown">
-				            <a href="">Tools</a><br/>
-				            <a href="">Equipment</a><br/>
-				            <a href="">Connect with Ox</a><br/>
-				            <a href="">Brochures</a><br/>
-				            <a href="">The ox Edge</a>
+				            <Link to="#">Tools</Link><br/>
+				            <Link to="#">Equipment</Link><br/>
+				            <Link to="#">Connect with Ox</Link><br/>
+				            <Link to="#">Brochures</Link><br/>
+				            <Link to="#">The ox Edge</Link>
 				        </div>
     				</li>
         		</ul>
