@@ -1,10 +1,10 @@
 import { createBrowserRouter } from 'react-router-dom'
 import './App.css'
-import { CattleGoat } from './pages/CattleGoat'
+import CattleGoat from './pages/CattleGoat'
 import { Home } from './pages/Home'
-import { LiveStock } from './pages/Livestock'
-import { Piggery } from './pages/Piggery'
-import { Poultry } from './pages/Poultry'
+import Livestock from './pages/Livestock'
+import Piggery from './pages/Piggery'
+import Poultry from './pages/Poultry'
 import { Steelstructures } from './pages/SteelStructures'
 import { Irrigation } from './pages/Irrigation'
 import { Oxchangingafrica } from './pages/OxChangingAfrica'
@@ -29,7 +29,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/livestock",
-    element: <LiveStock/>
+    element: <Livestock/>
   },
   {
     path: "/cattleandgoat",
