@@ -1,35 +1,32 @@
+import { Container, Row, Col, Card } from 'react-bootstrap';
 import { Link } from "react-router-dom"
 
 export const ToolSection = () => {
+    const tools = [
+        { name: "Tractors", link: "tractor", image: "https://placehold.co/300x200/EFEFEFF/grey?text=Tractor" },
+        { name: "Combine Harvesters", link: "combine", image: "https://placehold.co/300x200/EFEFEFF/grey?text=Combine" },
+        { name: "Implements", link: "comingsoon", image: "https://placehold.co/300x200/EFEFEFF/grey?text=Implement" },
+        { name: "Livestock", link: "/livestock", image: "https://placehold.co/300x200/EFEFEFF/grey?text=Livestock" },
+        { name: "Irrigation", link: "irrigation", image: "https://placehold.co/300x200/EFEFEFF/grey?text=Irrigation" },
+        { name: "Steel Structures", link: "steelstructures", image: "https://placehold.co/300x200/EFEFEFF/grey?text=Steel" }
+    ];
+
     return (
-        <div id="tool_section">
-        <div id="tool_menu">
-            <div className="flex_tools">
-                <Link to="tractor"><div id="tractor"></div>
-                <center>Tractors</center></Link>
-            </div>
-            <div className="flex_tools">
-                <Link to="combine"><div id="combineH"></div>
-                <center>Combine Harvestors</center></Link>
-            </div>
-            <div className="flex_tools">
-                <Link  to="comingsoon"><div id="implement"></div>
-                <center>Implement</center></Link>
-            </div>
-            <div className="flex_tools">
-                <Link to="/livestock"><div id="livestock"></div>
-                <center>LiveStock</center></Link>
-            </div>
-            <div className="flex_tools">
-                <Link  to="irrigation"><div id="irrigation"></div>
-                <center>Irrigation</center></Link>
-            </div>
-            <div className="flex_tools">
-                <Link to="steelstructures"><div id="steelstructures"></div>
-                <center>Steel Structures</center></Link>
-            </div>
-        </div>
-        
-    </div>
+        <Container className="my-5">
+            <Row>
+                {tools.map((tool, index) => (
+                    <Col key={index} md={4} lg={2} className="mb-4">
+                        <Link to={tool.link} className="text-decoration-none">
+                            <Card className="h-100 text-center">
+                                <Card.Img variant="top" src={tool.image} />
+                                <Card.Body>
+                                    <Card.Title>{tool.name}</Card.Title>
+                                </Card.Body>
+                            </Card>
+                        </Link>
+                    </Col>
+                ))}
+            </Row>
+        </Container>
     )
 }
