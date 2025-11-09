@@ -1,8 +1,8 @@
 import { Container, Row, Col, Card, Button, Badge, ListGroup } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
 import './TractorContent.css';
 import OXA from "../images/tractor/OXA.jpg"
 import OXB from "../images/tractor/OXB.jpg"
+// import { BreadCrumb } from './BreadCrumb';
 
 export const TractorContent = () => {
   const features = [
