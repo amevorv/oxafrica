@@ -10,7 +10,7 @@ export const Upgrade = () => {
         <>
             <Header/>
             <HeroImage2 url={OCA}/>
-            <BreadCrumb target={"Irrigation"}/>
+            <BreadCrumb target={"Upgrade"}/>
             <UpgradeContent/>
             <Footer/>
         </>
