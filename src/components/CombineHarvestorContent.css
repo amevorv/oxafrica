@@ -1,0 +1,62 @@
+.combine-harvester-page .hero-section {
+    position: relative;
+    color: white;
+  }
+  
+  .combine-harvester-page .hero-overlay {
+    background-color: rgba(225, 236, 231, 0.6);
+    padding: 4rem 1rem;
+    border-radius: .5rem;
+  }
+  
+  .combine-harvester-page .feature-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+  }
+  
+  .combine-harvester-page .feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
+  }
+  
+  .combine-harvester-page .feature-icon {
+    font-size: 3rem;
+  }
+  
+  .combine-harvester-page .spec-card .card-header {
+    font-weight: bold;
+  }
+  
+  .combine-harvester-page .gallery-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: .5rem;
+  }
+  
+  .combine-harvester-page .gallery-card .card-img-overlay {
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+  }
+  
+  .combine-harvester-page .stat-card {
+    border-left: 4px solid #198754;
+  }
+  
+  .combine-harvester-page .cta-section {
+    padding: 4rem 1rem;
+    background-color: rgba(225, 236, 231, 0.6);
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .combine-harvester-page .fadeInUp {
+    animation: fadeInUp 0.5s ease-in-out forwards;
+  }
