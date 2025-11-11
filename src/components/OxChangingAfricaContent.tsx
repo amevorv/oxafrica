@@ -237,7 +237,7 @@ export const OxChangingAfricaContent = () => {
                             <Button variant="light" size="lg" className="px-4">
                                 Learn More About OX
                             </Button>
-                            <Button variant="outline-light" size="lg" className="px-4">
+                            <Button variant="outline-light" size="lg" className="px-4" href="mailto:info@oxafrica.com">
                                 Contact Us for Updates
                             </Button>
                         </div>

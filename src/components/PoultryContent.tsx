@@ -119,7 +119,7 @@ export const PoultryContent: React.FC = () => {
         <h2 className="fw-bold">One-Stop Service for Poultry Farm Needs</h2>
         <p className="lead mb-4">From design to installation and training, we cover it all.</p>
         <div className="d-flex justify-content-center gap-3">
-          <a href="#contact" className="btn btn-success btn-lg btn-hover-effect">Get Free Consultation</a>
+          <a href="mailto:info@oxafrica.com" className="btn btn-success btn-lg btn-hover-effect">Get Free Consultation</a>
           <a href="/poultry" className="btn btn-outline-light btn-lg btn-hover-effect">View Solutions</a>
         </div>
       </div>

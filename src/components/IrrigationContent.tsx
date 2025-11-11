@@ -166,7 +166,7 @@ export const IrrigationContent = () => {
               how we can help you achieve optimal water efficiency and plant
               health.
             </p>
-            <Button variant="success" size="lg" href="/contact">
+            <Button variant="success" size="lg" href="mailto:info@oxafrica.com">
               Contact Us
             </Button>
           </Col>

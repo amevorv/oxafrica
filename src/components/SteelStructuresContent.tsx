@@ -98,7 +98,7 @@ export const SteelStructuresContent: React.FC = () => {
                 <Container>
                     <h2>Ready to Start Your Project?</h2>
                     <p className="lead">Contact us today for a free consultation and quote.</p>
-                    <Button variant="light" size="lg">Get in Touch</Button>
+                    <Button variant="light" size="lg" href="mailto:info@oxafrica.com">Get in Touch</Button>
                 </Container>
             </section>
         </div>

@@ -118,7 +118,7 @@ export const PiggeryContent: React.FC = () => {
         <h2 className="fw-bold">One-Stop Service for Pig Farm Needs</h2>
         <p className="lead mb-4">Design, installation and training by experienced professionals.</p>
         <div className="d-flex justify-content-center gap-3">
-          <a href="#contact" className="btn btn-success btn-lg btn-hover-effect">Get Free Consultation</a>
+          <a href="mailto:info@oxafrica.com" className="btn btn-success btn-lg btn-hover-effect">Get Free Consultation</a>
           <a href="/piggery" className="btn btn-outline-light btn-lg btn-hover-effect">View Solutions</a>
         </div>
       </div>

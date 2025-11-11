@@ -53,10 +53,10 @@ export const TractorContent = () => {
               Designed for maximum efficiency, power, and precision in modern agriculture.
             </p>
             <div className="d-flex gap-3">
-              <Button variant="success" size="lg" className="px-4">
+              <Button variant="success" size="lg" className="px-4" href="mailto:info@oxafrica.com">
                 Request Quote
               </Button>
-              <Button variant="outline-success" size="lg" className="px-4">
+              <Button variant="outline-success" size="lg" className="px-4" href="mailto:info@oxafrica.com">
                 Schedule Demo
               </Button>
             </div>
@@ -217,13 +217,13 @@ export const TractorContent = () => {
                 Get in touch with our team today.
               </p>
               <div className="d-flex justify-content-center gap-3 flex-wrap">
-                <Button variant="light" size="lg" className="px-4 fw-bold">
+                <Button variant="light" size="lg" className="px-4 fw-bold" href="mailto:info@oxafrica.com">
                   Get Quote
                 </Button>
-                <Button variant="outline-light" size="lg" className="px-4">
+                <Button variant="outline-light" size="lg" className="px-4" href="mailto:info@oxafrica.com">
                   Book Test Drive
                 </Button>
-                <Button variant="outline-light" size="lg" className="px-4">
+                <Button variant="outline-light" size="lg" className="px-4" href="mailto:info@oxafrica.com">
                   Download Brochure
                 </Button>
               </div>
