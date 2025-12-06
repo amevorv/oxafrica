@@ -1,6 +1,6 @@
 import React, { useMemo } from 'react';
 import { Container, Row, Col, Card, Button, Accordion } from 'react-bootstrap';
-import { BreadCrumb } from '../components/BreadCrumb';
+// import { BreadCrumb } from '../components/BreadCrumb';
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
 import { TrendingUp, Wrench, Layers, Users } from 'lucide-react';

@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
-import { BreadCrumb } from '../components/BreadCrumb';
+// import { BreadCrumb } from '../components/BreadCrumb';
 import './Careers.css';
 
 const Careers: React.FC = () => {
