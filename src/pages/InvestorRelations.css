@@ -1,0 +1,122 @@
+.ir-hero {
+  padding: 80px 0;
+  background: linear-gradient(180deg, rgba(0,128,0,0.1), rgba(255,255,255,1));
+}
+
+.ir-hero-content {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.ir-hero-title {
+  font-size: 2.25rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+}
+
+.ir-hero-subtitle {
+  margin-top: 12px;
+  font-size: 1.125rem;
+  color: #2f2f2f;
+}
+
+.ir-hero-actions {
+  margin-top: 24px;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.ir-btn {
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+.ir-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.12);
+}
+.ir-btn:focus-visible {
+  outline: 3px solid #228b22;
+  outline-offset: 2px;
+}
+
+.ir-section {
+  padding: 40px 0;
+}
+
+.ir-section-title {
+  margin-bottom: 16px;
+  color: green;
+  font-weight: 800;
+}
+
+.ir-paragraph {
+  line-height: 1.7;
+  margin-bottom: 12px;
+}
+
+.ir-card,
+.ir-tile {
+  border-radius: 12px;
+  border: 1px solid rgba(0,128,0,0.25);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+}
+.ir-card:hover,
+.ir-card:focus,
+.ir-tile:hover,
+.ir-tile:focus {
+  transform: translateY(-2px);
+  border-color: rgba(0,128,0,0.5);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.12);
+}
+
+.ir-card-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: rgba(0,128,0,0.1);
+  color: green;
+  margin-bottom: 8px;
+}
+
+.ir-list {
+  padding-left: 1rem;
+  margin: 0;
+}
+.ir-list li {
+  margin-bottom: 6px;
+}
+
+.ir-tile-copy {
+  color: #333;
+  margin: 0;
+}
+
+.ir-cta-banner {
+  margin-top: 20px;
+  padding: 40px 0;
+  background: linear-gradient(90deg, rgba(0,128,0,0.08), rgba(0,128,0,0));
+  text-align: center;
+}
+.ir-cta-title {
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.ir-cta-copy {
+  margin-bottom: 16px;
+}
+
+.ir-accordion-actions {
+  margin-top: 12px;
+}
+
+@media (max-width: 700px) {
+  .ir-hero-title {
+    font-size: 1.8rem;
+  }
+}

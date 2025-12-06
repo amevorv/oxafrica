@@ -19,9 +19,9 @@ export const Footer = () => {
               <Col md={3}>
               <h5>Company Information</h5>
               <ul className="list-unstyled">
-                <li className="mb-2" ><a href="/about" className="text-white-50 text-decoration-none hover:text-white">About Our Company</a></li>
-                <li className="mb-2"><a href="#" className="text-white-50 text-decoration-none hover:text-white">Careers</a></li>
-                <li className="mb-2"><a href="#" className="text-white-50 text-decoration-none hover:text-white">Investor Relations</a></li>
+                <li className="mb-2" ><a href="/about-us" className="text-white-50 text-decoration-none hover:text-white">About Our Company</a></li>
+                <li className="mb-2"><a href="/careers" className="text-white-50 text-decoration-none hover:text-white">Careers</a></li>
+                <li className="mb-2"><a href="/investor-relations" className="text-white-50 text-decoration-none hover:text-white">Investor Relations</a></li>
                 <li className="mb-2"><a href="#" className="text-white-50 text-decoration-none hover:text-white">News & Publications</a></li>
               </ul>
               </Col>

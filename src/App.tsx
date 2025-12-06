@@ -13,6 +13,8 @@ import { ComingSoon } from './pages/ComingSoon'
 import { Tractor } from './pages/Tractor'
 import { CombineHarvestors } from './pages/CombineHarvestors'
 import AboutUs from './pages/AboutUs'
+import InvestorRelations from './pages/InvestorRelations'
+import Careers from './pages/Careers'
 
 
 const router = createBrowserRouter([
@@ -73,8 +75,16 @@ const router = createBrowserRouter([
     element: <CombineHarvestors/>
   },
   {
-    path: "/about",
+    path: "/about-us",
     element: <AboutUs/>
+  },
+  {
+    path: "/investor-relations",
+    element: <InvestorRelations/>
+  },
+  {
+    path: "/careers",
+    element: <Careers/>
   }
 ], { basename: '/'});
 

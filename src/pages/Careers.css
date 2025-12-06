@@ -1,0 +1,79 @@
+.careers-hero {
+  padding: 80px 0;
+  background: linear-gradient(180deg, rgba(0,128,0,0.08), rgba(255,255,255,1));
+}
+
+.careers-hero-content {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.careers-hero-title {
+  font-size: 2.25rem;
+  font-weight: 800;
+}
+
+.careers-hero-subtitle {
+  margin-top: 10px;
+  font-size: 1.1rem;
+}
+
+.careers-hero-actions {
+  margin-top: 20px;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.careers-btn {
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+.careers-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.12);
+}
+.careers-btn:focus-visible {
+  outline: 3px solid #228b22;
+  outline-offset: 2px;
+}
+
+.careers-section {
+  padding: 40px 0;
+}
+
+.careers-section-title {
+  margin-bottom: 14px;
+  color: green;
+  font-weight: 800;
+}
+
+.careers-paragraph {
+  line-height: 1.7;
+  margin-bottom: 12px;
+}
+
+.careers-card {
+  border-radius: 12px;
+  border: 1px solid rgba(0,128,0,0.25);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+}
+.careers-card:hover,
+.careers-card:focus {
+  transform: translateY(-2px);
+  border-color: rgba(0,128,0,0.5);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.12);
+}
+
+.careers-card-copy {
+  margin: 0;
+  color: #333;
+}
+
+@media (max-width: 700px) {
+  .careers-hero-title {
+    font-size: 1.8rem;
+  }
+}
