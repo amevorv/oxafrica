@@ -1,9 +1,9 @@
 import { Card, Button, Container, Row, Col } from 'react-bootstrap';
 import csr1 from "../images/home/csr/image_21.png"
-import csr2 from "../images/home/csr/image_22.jpg"
+// import csr2 from "../images/home/csr/image_22.jpg"
 import csr3 from "../images/home/csr/image_23.jpg"
 
-
+const csr2 = "https://images.pexels.com/photos/1367269/pexels-photo-1367269.jpeg?_gl=1*1fj9e07*_ga*MTE4ODYyMzE3MS4xNzY0MTYxNDQy*_ga_8JE65Q40S6*czE3NjQxNjE0NDIkbzEkZzEkdDE3NjQxNjE5NDAkajE3JGwwJGgw"
 
 export const CSRSection = () => {
   return (
