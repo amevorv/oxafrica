@@ -1,4 +1,4 @@
-export const HeroContainer = (props: any) => {
+export const HeroContainer = (props: {image?: string}) => {
     return (
         <div id="hero">
             <div id="herocontainer">

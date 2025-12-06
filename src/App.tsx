@@ -12,6 +12,7 @@ import { Upgrade } from './pages/Upgrade'
 import { ComingSoon } from './pages/ComingSoon'
 import { Tractor } from './pages/Tractor'
 import { CombineHarvestors } from './pages/CombineHarvestors'
+import AboutUs from './pages/AboutUs'
 
 
 const router = createBrowserRouter([
@@ -70,6 +71,10 @@ const router = createBrowserRouter([
   {
     path: "/combine",
     element: <CombineHarvestors/>
+  },
+  {
+    path: "/about",
+    element: <AboutUs/>
   }
 ], { basename: '/'});
 
