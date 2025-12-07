@@ -838,3 +838,19 @@ button:hover{
 .second_image img{
   width: 60%;
 }
+
+.breadcrumb {
+  background: transparent;
+}
+.breadcrumb .breadcrumb-item a {
+  color: #c62828;
+  text-decoration: none;
+}
+.breadcrumb .breadcrumb-item a:hover,
+.breadcrumb .breadcrumb-item a:focus {
+  color: #b71c1c;
+  text-decoration: underline;
+}
+.breadcrumb .breadcrumb-item.active {
+  color: #000;
+}

@@ -24,6 +24,7 @@ export const Footer = () => {
                 <li className="mb-2"><Link to="/careers" className="text-white-50 text-decoration-none hover:text-white">Careers</Link></li>
                 <li className="mb-2"><Link to="/investor-relations" className="text-white-50 text-decoration-none hover:text-white">Investor Relations</Link></li>
                 <li className="mb-2"><a href="#" className="text-white-50 text-decoration-none hover:text-white">News & Publications</a></li>
+                <li className="mb-2"><Link to="/contact" className="text-white-50 text-decoration-none hover:text-white">Contact</Link></li>
               </ul>
               </Col>
               <Col md={3}>
