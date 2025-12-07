@@ -2,8 +2,8 @@ import { Card, Button, Container, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import content1 from "../images/home/content/image_17.jpg"
 import content2 from "../images/home/content/image_18.jpg"
-import content3 from "../images/home/content/image_19.jpg"
-// import content4 from "../images/home/content/image_20.jpg"
+// import content3 from "../images/home/content/image_19.jpg"
+import content4 from "../images/home/content/image_20.jpg"
 
 
 
@@ -43,7 +43,7 @@ export const ContentSection = () => {
       <Row>
         <Col md={12}>
           <Card className="mb-4">
-            <Card.Img variant="top" src={content3} />
+            <Card.Img variant="top" src={content4} />
             <Card.Body>
               <Card.Title>Trade your old Equipment for a new one</Card.Title>
               <Card.Text>
