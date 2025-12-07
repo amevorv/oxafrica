@@ -4,6 +4,7 @@ import { Header } from "../components/Header"
 import { HeroImage2 } from "../components/HeroImage2"
 import { OxChangingAfricaContent } from "../components/OxChangingAfricaContent"
 import OCA from "../images/home/oxchangingafrica/ox_changing_africa.png"
+import './OxChangingAfrica.css'
 
 export const Oxchangingafrica = () => {
     return (

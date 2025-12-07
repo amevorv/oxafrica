@@ -45,13 +45,14 @@
 
 .careers-section-title {
   margin-bottom: 14px;
-  color: green;
+  color: var(--brand-green);
   font-weight: 800;
 }
 
 .careers-paragraph {
   line-height: 1.7;
   margin-bottom: 12px;
+  color: #000;
 }
 
 .careers-card {
@@ -69,7 +70,7 @@
 
 .careers-card-copy {
   margin: 0;
-  color: #333;
+  color: #000;
 }
 
 @media (max-width: 700px) {

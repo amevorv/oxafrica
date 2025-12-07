@@ -1,0 +1,10 @@
+.text-primary { color: var(--brand-green) !important; }
+.bg-primary { background-color: var(--brand-green) !important; }
+.text-success { color: var(--brand-green) !important; }
+.text-danger { color: var(--brand-red) !important; }
+.text-warning { color: var(--brand-red) !important; }
+.text-info { color: var(--brand-red) !important; }
+.text-secondary { color: var(--brand-red) !important; }
+.text-muted { color: #00000099 !important; }
+.cta-section { box-shadow: 0 2px 10px rgba(0,0,0,0.08); }
+

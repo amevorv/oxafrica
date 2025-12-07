@@ -18,7 +18,7 @@
 .ir-hero-subtitle {
   margin-top: 12px;
   font-size: 1.125rem;
-  color: #2f2f2f;
+  color: #000;
 }
 
 .ir-hero-actions {
@@ -47,13 +47,14 @@
 
 .ir-section-title {
   margin-bottom: 16px;
-  color: green;
+  color: var(--brand-green);
   font-weight: 800;
 }
 
 .ir-paragraph {
   line-height: 1.7;
   margin-bottom: 12px;
+  color: #000;
 }
 
 .ir-card,
@@ -80,7 +81,7 @@
   height: 42px;
   border-radius: 50%;
   background: rgba(0,128,0,0.1);
-  color: green;
+  color: var(--brand-green);
   margin-bottom: 8px;
 }
 
@@ -93,14 +94,14 @@
 }
 
 .ir-tile-copy {
-  color: #333;
+  color: #000;
   margin: 0;
 }
 
 .ir-cta-banner {
   margin-top: 20px;
   padding: 40px 0;
-  background: linear-gradient(90deg, rgba(0,128,0,0.08), rgba(0,128,0,0));
+  background: linear-gradient(90deg, rgba(211,47,47,0.1), rgba(0,128,0,0.08));
   text-align: center;
 }
 .ir-cta-title {

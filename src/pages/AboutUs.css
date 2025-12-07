@@ -1,0 +1,24 @@
+.about-toc-link {
+  transition: color 160ms ease, box-shadow 160ms ease;
+}
+.about-toc-link:hover {
+  color: var(--brand-red);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.about-toc-link:focus-visible {
+  outline: 3px solid var(--brand-red);
+  outline-offset: 2px;
+}
+
+.about-cta-btn {
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+.about-cta-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.12);
+}
+.about-cta-btn:focus-visible {
+  outline: 3px solid var(--brand-red);
+  outline-offset: 2px;
+}
+
