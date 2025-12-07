@@ -3,6 +3,7 @@ import React from 'react';
 import { BreadCrumb } from '../components/BreadCrumb';
 import { HeroImage2 } from '../components/HeroImage2';
 import { Footer } from '../components/Footer';
+import { Header } from '../components/Header';
 // ...existing code...
 
 const AboutUs: React.FC = () => {
@@ -51,6 +52,7 @@ const AboutUs: React.FC = () => {
 
   return (
     <div style={styles.page}>
+      <Header />
       <HeroImage2 url="/assets/hero-about.jpg" />
       <BreadCrumb target="About Us" />
       <div style={styles.container}>
